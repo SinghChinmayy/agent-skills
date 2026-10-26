@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="Sketch: three round characters. A grumpy red one holding a FAIL sign is the red step, write one failing test. A happy green one holding a PASS sign is the green step, the smallest code that passes. A smug blue one in sunglasses with a broom is the optional refactor step. An arrow loops back to red for the next behaviour. Each step is its own commit.">
+  <defs>
+    <filter id="w" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2"/>
+      <feDisplacementMap in="SourceGraphic" scale="2.6"/>
+    </filter>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2b2b2b"/>
+    </marker>
+    <style>
+      text{font-family:'Comic Neue','Chalkboard SE','Comic Sans MS','Marker Felt',cursive;fill:#2b2b2b}
+      .s{stroke:#2b2b2b;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .mono{font-family:'SF Mono',Menlo,Consolas,monospace;fill:#5b6573}
+    </style>
+  </defs>
+  <rect width="800" height="400" rx="18" fill="#fffdf7"/>
+
+  <g filter="url(#w)">
+    <!-- loop back arrow -->
+    <path d="M660 96 C 600 20, 220 20, 150 92" class="s" stroke-dasharray="7 7" marker-end="url(#a)"/>
+    <!-- forward arrows -->
+    <path d="M232 178 L310 178" class="s" marker-end="url(#a)"/>
+    <path d="M490 178 L568 178" class="s" marker-end="url(#a)"/>
+
+    <!-- RED -->
+    <circle cx="150" cy="180" r="70" style="fill:#ffb4b6" class="s"/>
+    <path d="M118 158 l22 10 M182 158 l-22 10" class="s" stroke-width="4"/>
+    <circle cx="128" cy="176" r="5" fill="#2b2b2b"/><circle cx="172" cy="176" r="5" fill="#2b2b2b"/>
+    <path d="M128 212 q22 -18 44 0" class="s"/>
+    <path d="M206 144 l20 -16 M212 160 l22 -8" class="s" stroke="#e5484d"/>
+    <rect x="44" y="96" width="70" height="36" rx="5" style="fill:#fff" class="s" transform="rotate(-10 79 114)"/>
+    <path d="M86 132 L96 166" class="s"/>
+
+    <!-- GREEN -->
+    <circle cx="400" cy="180" r="70" style="fill:#b6ebcd" class="s"/>
+    <path d="M370 172 q10 -12 20 0 M410 172 q10 -12 20 0" class="s"/>
+    <path d="M368 200 q32 34 64 0 z" style="fill:#fff" class="s"/>
+    <circle cx="360" cy="196" r="7" fill="#f6a5a5"/><circle cx="440" cy="196" r="7" fill="#f6a5a5"/>
+    <rect x="430" y="88" width="72" height="36" rx="5" style="fill:#fff" class="s" transform="rotate(8 466 106)"/>
+    <path d="M456 124 L444 150" class="s"/>
+
+    <!-- REFACTOR -->
+    <circle cx="650" cy="180" r="70" style="fill:#bcd3ff" class="s"/>
+    <path d="M610 168 h80" class="s"/>
+    <rect x="612" y="164" width="32" height="20" rx="8" fill="#2b2b2b"/>
+    <rect x="656" y="164" width="32" height="20" rx="8" fill="#2b2b2b"/>
+    <path d="M636 210 q14 8 30 -4" class="s"/>
+    <path d="M716 150 L748 252" class="s" stroke="#9a7b5b" stroke-width="4"/>
+    <path d="M736 246 L768 240 L774 270 L746 276 Z" style="fill:#f5c451" class="s"/>
+    <path d="M748 278 l-6 10 M760 276 l-2 12 M770 272 l4 10" class="s" stroke-width="1.8"/>
+  </g>
+
+  <text x="79" y="120" font-size="17" font-weight="700" text-anchor="middle" transform="rotate(-10 79 114)" style="fill:#e5484d">FAIL</text>
+  <text x="466" y="112" font-size="17" font-weight="700" text-anchor="middle" transform="rotate(8 466 106)" style="fill:#30a46c">PASS</text>
+  <text x="400" y="74" font-size="15" text-anchor="middle" style="fill:#5b6573">next behaviour</text>
+
+  <text x="150" y="284" font-size="20" font-weight="700" text-anchor="middle" style="fill:#e5484d">RED</text>
+  <text x="150" y="308" font-size="15" text-anchor="middle">one failing test,</text>
+  <text x="150" y="328" font-size="15" text-anchor="middle">failing for the right reason</text>
+  <text x="150" y="360" font-size="12" text-anchor="middle" class="mono">test: … (red)</text>
+
+  <text x="400" y="284" font-size="20" font-weight="700" text-anchor="middle" style="fill:#30a46c">GREEN</text>
+  <text x="400" y="308" font-size="15" text-anchor="middle">the smallest code</text>
+  <text x="400" y="328" font-size="15" text-anchor="middle">that makes it pass</text>
+  <text x="400" y="360" font-size="12" text-anchor="middle" class="mono">feat: …</text>
+
+  <text x="650" y="284" font-size="20" font-weight="700" text-anchor="middle" style="fill:#276ef1">REFACTOR</text>
+  <text x="650" y="308" font-size="15" text-anchor="middle">tidy up, still green</text>
+  <text x="650" y="328" font-size="15" text-anchor="middle">(only if worth it)</text>
+  <text x="650" y="360" font-size="12" text-anchor="middle" class="mono">refactor: …</text>
+
+  <text x="400" y="390" font-size="13" text-anchor="middle" style="fill:#5b6573">every step is its own commit, so the history proves the test came first</text>
+</svg>

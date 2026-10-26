@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="Sketch: on the left a sweating robot with a giant speech bubble full of filler words, sure I would be happy to help, great question, basically, most likely, which goes on for 312 tokens. On the right the same robot dressed as a caveman with a club and a fur tunic says: Bug in auth. Less-than, not less-than-or-equal. Fix. A bar chart in the middle shows output dropping from 312 tokens to 78, about 75 percent fewer.">
+  <defs>
+    <filter id="w" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="5"/>
+      <feDisplacementMap in="SourceGraphic" scale="2.6"/>
+    </filter>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#30a46c"/>
+    </marker>
+    <symbol id="bot" viewBox="0 0 80 110">
+      <line x1="40" y1="5" x2="40" y2="16" class="s"/>
+      <circle cx="40" cy="5" r="4" style="fill:#e5484d" class="s"/>
+      <rect x="10" y="16" width="60" height="40" rx="11" style="fill:#dde3ea" class="s"/>
+      <circle cx="28" cy="34" r="5" fill="#2b2b2b"/><circle cx="52" cy="34" r="5" fill="#2b2b2b"/>
+      <circle cx="30" cy="32" r="1.6" fill="#fff"/><circle cx="54" cy="32" r="1.6" fill="#fff"/>
+      <path d="M31 45 Q40 52 49 45" class="s"/>
+      <circle cx="19" cy="45" r="3.5" fill="#f6a5a5"/><circle cx="61" cy="45" r="3.5" fill="#f6a5a5"/>
+      <rect x="18" y="60" width="44" height="34" rx="8" style="fill:#c9d3df" class="s"/>
+      <circle cx="40" cy="77" r="5" style="fill:#30a46c" class="s"/>
+      <path d="M18 68 L6 82 M30 94 L30 106 M50 94 L50 106" class="s"/>
+    </symbol>
+    <style>
+      text{font-family:'Comic Neue','Chalkboard SE','Comic Sans MS','Marker Felt',cursive;fill:#2b2b2b}
+      .mono{font-family:'SF Mono',Menlo,Consolas,monospace}
+      .s{stroke:#2b2b2b;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect width="800" height="400" rx="18" fill="#fffdf7"/>
+
+  <g filter="url(#w)">
+    <!-- verbose bubble -->
+    <path d="M44 22 h386 a14 14 0 0 1 14 14 v136 a14 14 0 0 1 -14 14 h-276 l-30 26 l4 -26 h-84 a14 14 0 0 1 -14 -14 v-136 a14 14 0 0 1 14 -14 z" style="fill:#fff" class="s"/>
+    <!-- sweat -->
+    <path d="M186 228 q6 10 0 16 q-6 -6 0 -16 z" fill="#8fd3f4" stroke="#2b2b2b" stroke-width="1.8"/>
+    <path d="M196 252 q5 8 0 13 q-5 -5 0 -13 z" fill="#8fd3f4" stroke="#2b2b2b" stroke-width="1.8"/>
+    <!-- caveman bubble -->
+    <path d="M520 74 h240 a14 14 0 0 1 14 14 v62 a14 14 0 0 1 -14 14 h-96 l-22 28 l0 -28 h-122 a14 14 0 0 1 -14 -14 v-62 a14 14 0 0 1 14 -14 z" style="fill:#fff" class="s"/>
+    <!-- token chart -->
+    <path d="M262 332 h236" class="s"/>
+    <rect x="292" y="232" width="50" height="100" rx="4" style="fill:#ffb4b6" class="s"/>
+    <rect x="420" y="307" width="50" height="25" rx="4" style="fill:#b6ebcd" class="s"/>
+    <path d="M350 246 C 386 250, 420 268, 440 298" class="s" stroke="#30a46c" stroke-dasharray="6 6" marker-end="url(#a)"/>
+    <!-- club -->
+    <path d="M610 314 L584 262" class="s" stroke="#9a7b5b" stroke-width="6"/>
+    <ellipse cx="576" cy="244" rx="14" ry="24" transform="rotate(-26 576 244)" style="fill:#c9a27a" class="s"/>
+    <path d="M570 236 l6 4 M580 250 l5 2" class="s" stroke-width="1.8"/>
+  </g>
+  <use href="#bot" x="60" y="200" width="110" height="151"/>
+  <use href="#bot" x="600" y="200" width="110" height="151"/>
+  <g filter="url(#w)">
+    <!-- caveman hair, unibrow, tunic -->
+    <path d="M616 229 l4 -12 l8 8 l6 -12 l8 9 l7 -12 l7 11 l8 -11 l6 11 l8 -10 l6 11 l6 -5 l2 12 z" style="fill:#6b4f3a" class="s"/>
+    <path d="M632 241 q23 -7 46 0" class="s" stroke-width="4"/>
+    <path d="M640 284 L684 284 L684 328 L626 328 L626 304 Z" style="fill:#f5c451" class="s"/>
+    <ellipse cx="648" cy="300" rx="4" ry="3" fill="#9a7b5b"/><ellipse cx="668" cy="294" rx="4" ry="3" fill="#9a7b5b"/>
+    <ellipse cx="672" cy="316" rx="4" ry="3" fill="#9a7b5b"/><ellipse cx="640" cy="318" rx="4" ry="3" fill="#9a7b5b"/>
+  </g>
+
+  <text x="56" y="52" font-size="15">Sure! I'd be happy to help you with that!</text>
+  <text x="56" y="76" font-size="15">Great question, by the way. So, basically,</text>
+  <text x="56" y="100" font-size="15">the issue that you are experiencing here is</text>
+  <text x="56" y="124" font-size="15">most likely, in all probability, caused by</text>
+  <text x="56" y="148" font-size="15">what appears to be a rather subtle little...</text>
+  <text x="430" y="174" font-size="13" text-anchor="end" style="fill:#8a94a3">(continues for 312 tokens)</text>
+
+  <text x="640" y="108" font-size="20" font-weight="700" text-anchor="middle">Bug in auth.</text>
+  <text x="640" y="140" font-size="17" text-anchor="middle"><tspan class="mono" style="fill:#e5484d">&lt;</tspan> not <tspan class="mono" style="fill:#e5484d">&lt;=</tspan>. Fix:</text>
+
+  <text x="317" y="224" font-size="14" text-anchor="middle" style="fill:#e5484d">312 tokens</text>
+  <text x="478" y="324" font-size="14" style="fill:#30a46c">78 tokens</text>
+  <text x="452" y="250" font-size="24" font-weight="700" text-anchor="middle" style="fill:#30a46c">-75%</text>
+  <text x="317" y="352" font-size="14" text-anchor="middle" style="fill:#5b6573">normal</text>
+  <text x="445" y="352" font-size="14" text-anchor="middle" style="fill:#5b6573">caveman</text>
+
+  <text x="400" y="386" font-size="15" text-anchor="middle" style="fill:#5b6573">Same brain, fewer tokens. Filler dies; code, symbols and error strings stay exact.</text>
+</svg>

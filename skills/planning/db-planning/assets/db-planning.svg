@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Sketch: a robot with a clipboard asks question 2.2, does one user have many orders, recommending yes, one to many. An arrow leads to a whiteboard with three DBML-style tables, users, orders and items, joined by one-to-many lines and the line Ref: orders.user_id greater than users.id. Another arrow leads to a folder tree: planning/db/v0 holds stage-1.dbml, stage-1.md, stage-1.1.dbml and stage-2.dbml, and v1 is for the next session. Pills mark stage 1, the interview, and stage 2, the versioned DBML and Markdown plan.">
+  <defs>
+    <filter id="w" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="12"/>
+      <feDisplacementMap in="SourceGraphic" scale="2.6"/>
+    </filter>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2b2b2b"/></marker>
+    <symbol id="bot" viewBox="0 0 80 110">
+      <line x1="40" y1="5" x2="40" y2="16" class="s"/>
+      <circle cx="40" cy="5" r="4" style="fill:#e5484d" class="s"/>
+      <rect x="10" y="16" width="60" height="40" rx="11" style="fill:#dde3ea" class="s"/>
+      <circle cx="28" cy="34" r="5" fill="#2b2b2b"/><circle cx="52" cy="34" r="5" fill="#2b2b2b"/>
+      <circle cx="30" cy="32" r="1.6" fill="#fff"/><circle cx="54" cy="32" r="1.6" fill="#fff"/>
+      <path d="M31 45 Q40 52 49 45" class="s"/>
+      <circle cx="19" cy="45" r="3.5" fill="#f6a5a5"/><circle cx="61" cy="45" r="3.5" fill="#f6a5a5"/>
+      <rect x="18" y="60" width="44" height="34" rx="8" style="fill:#c9d3df" class="s"/>
+      <circle cx="40" cy="77" r="5" style="fill:#30a46c" class="s"/>
+      <path d="M18 68 L6 82 M30 94 L30 106 M50 94 L50 106" class="s"/>
+    </symbol>
+    <style>
+      text{font-family:'Comic Neue','Chalkboard SE','Comic Sans MS','Marker Felt',cursive;fill:#2b2b2b}
+      .mono{font-family:'SF Mono',Menlo,Consolas,monospace}
+      .s{stroke:#2b2b2b;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect width="800" height="420" rx="18" fill="#fffdf7"/>
+  <g filter="url(#w)">
+    <path d="M34 22 h198 a12 12 0 0 1 12 12 v94 a12 12 0 0 1 -12 12 h-118 l-10 30 l-14 -30 h-56 a12 12 0 0 1 -12 -12 v-94 a12 12 0 0 1 12 -12 z" style="fill:#fff" class="s"/>
+    <path d="M125 273 L160 282" class="s"/>
+    <rect x="156" y="252" width="48" height="62" rx="5" style="fill:#f5c451" class="s"/><rect x="163" y="261" width="34" height="47" rx="3" style="fill:#fff" class="s"/><rect x="171" y="246" width="18" height="10" rx="3" style="fill:#c9d3df" class="s"/>
+    <path d="M168 272 l3 3 l6 -7 M168 286 l3 3 l6 -7 M181 273 h11 M181 287 h11 M168 300 h24" class="s" stroke-width="1.6"/>
+    <path d="M288 300 L272 346 M512 300 L528 346" class="s"/>
+    <rect x="250" y="40" width="300" height="260" rx="8" style="fill:#fff" class="s" stroke-width="3.5"/>
+    <rect x="366" y="300" width="68" height="8" rx="3" style="fill:#c9d3df" class="s" stroke-width="1.8"/>
+    <rect x="268" y="62" width="110" height="84" rx="6" style="fill:#fff" class="s"/>
+    <path d="M268 86 h110" class="s"/><rect x="270" y="64" width="106" height="21" rx="5" style="fill:#dbe7ff"/>
+    <rect x="422" y="62" width="110" height="84" rx="6" style="fill:#fff" class="s"/>
+    <path d="M422 86 h110" class="s"/><rect x="424" y="64" width="106" height="21" rx="5" style="fill:#fff1c7"/>
+    <rect x="345" y="182" width="110" height="84" rx="6" style="fill:#fff" class="s"/>
+    <path d="M345 206 h110" class="s"/><rect x="347" y="184" width="106" height="21" rx="5" style="fill:#d3f3e1"/>
+    <path d="M378 102 C 400 102, 400 126, 422 126" class="s" style="stroke:#276ef1"/>
+    <path d="M455 246 C 490 246, 476 190, 476 146" class="s" style="stroke:#276ef1"/>
+    <path d="M210 262 L244 250" class="s" marker-end="url(#a)"/>
+    <path d="M556 176 L590 176" class="s" marker-end="url(#a)"/>
+    <path d="M606 92 V268 H614 M606 118 H614 M622 126 V232 M622 148 H636 M622 176 H636 M622 204 H636 M622 232 H636" class="s" stroke-width="1.5" style="stroke:#8a94a3"/>
+    <path d="M598 72 h7 l3 3 h11 v12 h-21 z" style="fill:#f5c451" class="s" stroke-width="1.8"/>
+    <path d="M614 106 h7 l3 3 h11 v12 h-21 z" style="fill:#f5c451" class="s" stroke-width="1.8"/>
+    <path d="M640 135 h9 l4 4 v12 h-13 z" style="fill:#fff" class="s" stroke-width="1.8"/>
+    <path d="M640 163 h9 l4 4 v12 h-13 z" style="fill:#fff" class="s" stroke-width="1.8"/>
+    <path d="M640 191 h9 l4 4 v12 h-13 z" style="fill:#fff" class="s" stroke-width="1.8"/>
+    <path d="M640 219 h9 l4 4 v12 h-13 z" style="fill:#fff" class="s" stroke-width="1.8"/>
+    <path d="M614 256 h7 l3 3 h11 v12 h-21 z" style="fill:#f5c451" class="s" stroke-width="1.8"/>
+    <rect x="24" y="352" width="200" height="32" rx="16" style="fill:#ebe3fd" class="s"/>
+    <rect x="290" y="352" width="470" height="32" rx="16" style="fill:#fff1c7" class="s"/>
+  </g>
+  <use href="#bot" x="30" y="180" width="110" height="151"/>
+  <text x="323" y="79" font-size="13" class="mono" text-anchor="middle" font-weight="700" style="fill:#2b2b2b">users</text>
+  <text x="280" y="106" font-size="12" class="mono" text-anchor="start" style="fill:#5b6573">id  pk</text>
+  <text x="280" y="126" font-size="12" class="mono" text-anchor="start" style="fill:#5b6573">email</text>
+  <text x="477" y="79" font-size="13" class="mono" text-anchor="middle" font-weight="700" style="fill:#2b2b2b">orders</text>
+  <text x="434" y="106" font-size="12" class="mono" text-anchor="start" style="fill:#5b6573">id  pk</text>
+  <text x="434" y="126" font-size="12" class="mono" text-anchor="start" style="fill:#5b6573">user_id</text>
+  <text x="400" y="199" font-size="13" class="mono" text-anchor="middle" font-weight="700" style="fill:#2b2b2b">items</text>
+  <text x="357" y="226" font-size="12" class="mono" text-anchor="start" style="fill:#5b6573">id  pk</text>
+  <text x="357" y="246" font-size="12" class="mono" text-anchor="start" style="fill:#5b6573">order_id</text>
+  <text x="384" y="96" font-size="14" font-weight="700" style="fill:#276ef1">1</text>
+  <text x="410" y="120" font-size="14" font-weight="700" style="fill:#276ef1">*</text>
+  <text x="484" y="160" font-size="14" font-weight="700" style="fill:#276ef1">1</text>
+  <text x="462" y="240" font-size="14" font-weight="700" style="fill:#276ef1">*</text>
+  <text x="400" y="290" font-size="11" class="mono" text-anchor="middle" style="fill:#276ef1">Ref: orders.user_id &gt; users.id</text>
+  <text x="626" y="84" font-size="13" class="mono" text-anchor="start" font-weight="700" style="fill:#2b2b2b">planning/db/</text>
+  <text x="642" y="118" font-size="13" class="mono" text-anchor="start" font-weight="700" style="fill:#2b2b2b">v0/</text>
+  <text x="660" y="148" font-size="13" class="mono" text-anchor="start" style="fill:#2b2b2b">stage-1.dbml</text>
+  <text x="660" y="176" font-size="13" class="mono" text-anchor="start" style="fill:#2b2b2b">stage-1.md</text>
+  <text x="660" y="204" font-size="13" class="mono" text-anchor="start" style="fill:#5b6573">stage-1.1.dbml</text>
+  <text x="660" y="232" font-size="13" class="mono" text-anchor="start" style="fill:#5b6573">stage-2.dbml</text>
+  <text x="642" y="268" font-size="13" class="mono" text-anchor="start" font-weight="700" style="fill:#2b2b2b">v1/</text>
+  <text x="660" y="292" font-size="12" style="fill:#5b6573">next session</text>
+  <text x="700" y="320" font-size="12" text-anchor="middle" style="fill:#5b6573">.1 = small tweak, 2 = big shift</text>
+  <text x="40" y="50" font-size="16" font-weight="700">Q 2.2:</text>
+  <text x="40" y="74" font-size="15">Does one user have</text>
+  <text x="40" y="96" font-size="15">many orders?</text>
+  <text x="40" y="124" font-size="15" style="fill:#276ef1">Rec: yes, 1:N</text>
+  <text x="124" y="373" font-size="15" font-weight="700" text-anchor="middle">Stage 1: interview</text>
+  <text x="525" y="373" font-size="15" font-weight="700" text-anchor="middle">Stage 2: versioned plan, DBML + MD</text>
+  <text x="400" y="408" font-size="15" text-anchor="middle" style="fill:#5b6573">One question at a time until the schema is clear, then every change gets its own versioned file.</text>
+</svg>

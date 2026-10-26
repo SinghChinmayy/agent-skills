@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Sketch: a robot in a hard hat works inside a fenced sandbox signed FILES IN SCOPE, next to its two files, discount.ts and discount.test.ts. The fence gate is padlocked. Outside the gate a developer holds a big key and says: tests green? Then approve. Beyond the gate is the rest of the codebase: router.ts gets three added lines, legacy.js stays untouched, and the global test suite is green. Stepping stones along the bottom show the six phases: scope, build, test, review, merge, global check.">
+  <defs>
+    <filter id="w" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4"/>
+      <feDisplacementMap in="SourceGraphic" scale="2.6"/>
+    </filter>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2b2b2b"/>
+    </marker>
+    <symbol id="bot" viewBox="0 0 80 110">
+      <line x1="40" y1="5" x2="40" y2="16" class="s"/>
+      <circle cx="40" cy="5" r="4" style="fill:#e5484d" class="s"/>
+      <rect x="10" y="16" width="60" height="40" rx="11" style="fill:#dde3ea" class="s"/>
+      <circle cx="28" cy="34" r="5" fill="#2b2b2b"/><circle cx="52" cy="34" r="5" fill="#2b2b2b"/>
+      <circle cx="30" cy="32" r="1.6" fill="#fff"/><circle cx="54" cy="32" r="1.6" fill="#fff"/>
+      <path d="M31 45 Q40 52 49 45" class="s"/>
+      <circle cx="19" cy="45" r="3.5" fill="#f6a5a5"/><circle cx="61" cy="45" r="3.5" fill="#f6a5a5"/>
+      <rect x="18" y="60" width="44" height="34" rx="8" style="fill:#c9d3df" class="s"/>
+      <circle cx="40" cy="77" r="5" style="fill:#30a46c" class="s"/>
+      <path d="M18 68 L6 82 M30 94 L30 106 M50 94 L50 106" class="s"/>
+    </symbol>
+    <style>
+      text{font-family:'Comic Neue','Chalkboard SE','Comic Sans MS','Marker Felt',cursive;fill:#2b2b2b}
+      .mono{font-family:'SF Mono',Menlo,Consolas,monospace}
+      .s{stroke:#2b2b2b;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect width="800" height="420" rx="18" fill="#fffdf7"/>
+
+  <g filter="url(#w)">
+    <!-- sandbox ground + fence with a gate gap on the right -->
+    <rect x="30" y="70" width="350" height="248" rx="6" style="fill:#eef8f1"/>
+    <path d="M380 166 V70 H30 V318 H380 V244" class="s" stroke="#9a7b5b" stroke-width="3"/>
+    <path d="M50 62 V78 M50 310 V326 M80 62 V78 M80 310 V326 M110 310 V326 M140 310 V326 M170 310 V326 M200 310 V326 M230 310 V326 M260 310 V326 M290 310 V326 M320 62 V78 M320 310 V326 M350 62 V78 M350 310 V326 M22 92 H38 M372 92 H388 M22 122 H38 M372 122 H388 M22 152 H38 M372 152 H388 M22 182 H38 M22 212 H38 M22 242 H38 M22 272 H38 M372 272 H388" class="s" stroke="#9a7b5b" stroke-width="4"/>
+    <!-- gate + padlock -->
+    <rect x="373" y="166" width="14" height="78" rx="3" style="fill:#c9a27a" class="s"/>
+    <path d="M374 200 v-8 a7 7 0 0 1 14 0 v8" class="s"/>
+    <rect x="368" y="200" width="26" height="20" rx="4" style="fill:#f5c451" class="s"/>
+    <circle cx="381" cy="210" r="2.5" fill="#2b2b2b"/>
+    <!-- sign -->
+    <path d="M150 52 V44 M260 52 V44" class="s"/>
+    <rect x="118" y="50" width="174" height="36" rx="6" style="fill:#f5c451" class="s"/>
+    <!-- module file -->
+    <path d="M196 104 h70 l16 16 v56 h-86 z" style="fill:#fff" class="s"/>
+    <path d="M266 104 v16 h16" class="s"/>
+    <path d="M206 132 h40 M214 144 h50 M214 156 h36 M206 168 h22" class="s" stroke-width="1.8" stroke="#276ef1"/>
+    <!-- test file -->
+    <path d="M236 206 h70 l16 16 v56 h-86 z" style="fill:#fff" class="s"/>
+    <path d="M306 206 v16 h16" class="s"/>
+    <path d="M246 232 l4 4 l8 -9 M246 250 l4 4 l8 -9 M246 268 l4 4 l8 -9" class="s" stroke="#30a46c"/>
+    <path d="M266 233 h38 M266 251 h30 M266 269 h40" class="s" stroke-width="1.8"/>
+
+    <!-- developer -->
+    <circle cx="456" cy="182" r="24" style="fill:#ffe3c4" class="s"/>
+    <path d="M436 172 q20 -24 40 0" class="s" stroke-width="5"/>
+    <circle cx="448" cy="184" r="2.6" fill="#2b2b2b"/><circle cx="464" cy="184" r="2.6" fill="#2b2b2b"/>
+    <path d="M448 194 q8 5 16 0" class="s"/>
+    <path d="M456 206 L456 270 M456 270 L440 316 M456 270 L472 316 M456 222 L432 230 M456 222 L478 208" class="s"/>
+    <!-- big key -->
+    <circle cx="432" cy="230" r="10" style="fill:#f5c451" class="s"/>
+    <path d="M422 230 H396 M402 230 v8 M410 230 v6" class="s" stroke-width="3"/>
+    <!-- dev bubble -->
+    <path d="M410 82 h140 a12 12 0 0 1 12 12 v34 a12 12 0 0 1 -12 12 h-76 l-14 18 l-2 -18 h-48 a12 12 0 0 1 -12 -12 v-34 a12 12 0 0 1 12 -12 z" style="fill:#fff" class="s"/>
+
+    <!-- rest of codebase -->
+    <path d="M584 140 h56 l14 14 v46 h-70 z" style="fill:#dbe7ff" class="s" stroke="#276ef1"/>
+    <path d="M594 162 h40 M594 174 h30 M594 186 h42" class="s" stroke-width="1.8"/>
+    <path d="M690 140 h56 l14 14 v46 h-70 z" style="fill:#eef1f5" class="s" stroke="#8a94a3"/>
+    <path d="M700 162 h40 M700 174 h30 M700 186 h42" class="s" stroke-width="1.8" stroke="#8a94a3"/>
+    <path d="M744 142 l14 0 M748 146 l10 -4" class="s" stroke-width="1.2" stroke="#8a94a3"/>
+    <rect x="584" y="256" width="176" height="44" rx="10" style="fill:#d3f3e1" class="s" stroke="#30a46c"/>
+    <path d="M598 278 l5 5 l10 -12" class="s" stroke="#30a46c"/>
+
+    <!-- phase stepping stones -->
+    <rect x="32" y="344" width="96" height="34" rx="16" style="fill:#ebe3fd" class="s"/>
+    <rect x="147" y="344" width="96" height="34" rx="16" style="fill:#fff1c7" class="s"/>
+    <rect x="262" y="344" width="96" height="34" rx="16" style="fill:#d3f3e1" class="s"/>
+    <rect x="397" y="344" width="96" height="34" rx="16" style="fill:#ffd6d7" class="s" stroke="#e5484d"/>
+    <rect x="537" y="344" width="96" height="34" rx="16" style="fill:#dbe7ff" class="s"/>
+    <rect x="652" y="344" width="120" height="34" rx="16" style="fill:#d3f3e1" class="s"/>
+    <path d="M130 361 H143" class="s" stroke-width="2" marker-end="url(#a)"/>
+    <path d="M245 361 H258" class="s" stroke-width="2" marker-end="url(#a)"/>
+    <path d="M360 361 H393" class="s" stroke-width="2" marker-end="url(#a)"/>
+    <path d="M495 361 H533" class="s" stroke-width="2" marker-end="url(#a)"/>
+    <path d="M635 361 H648" class="s" stroke-width="2" marker-end="url(#a)"/>
+  </g>
+  <use href="#bot" x="64" y="132" width="110" height="151"/>
+  <g filter="url(#w)">
+    <!-- hard hat -->
+    <path d="M80 158 q39 -44 78 0 z" style="fill:#f5c451" class="s"/>
+    <path d="M72 158 h94" class="s" stroke-width="3"/>
+    <path d="M119 124 v34" class="s" stroke-width="1.8"/>
+  </g>
+
+  <text x="205" y="74" font-size="17" font-weight="700" text-anchor="middle">FILES IN SCOPE</text>
+  <text x="239" y="194" font-size="12" text-anchor="middle" class="mono">discount.ts</text>
+  <text x="279" y="298" font-size="12" text-anchor="middle" class="mono">discount.test.ts</text>
+
+  <text x="486" y="106" font-size="15" text-anchor="middle">Tests green?</text>
+  <text x="486" y="128" font-size="15" text-anchor="middle" font-weight="700" style="fill:#30a46c">Then approve.</text>
+
+  <text x="672" y="118" font-size="14" text-anchor="middle" style="fill:#5b6573">rest of the codebase</text>
+  <text x="619" y="218" font-size="12" text-anchor="middle" class="mono">router.ts</text>
+  <text x="619" y="236" font-size="13" text-anchor="middle" style="fill:#276ef1">+3 lines</text>
+  <text x="725" y="218" font-size="12" text-anchor="middle" class="mono" style="fill:#8a94a3">legacy.js</text>
+  <text x="725" y="236" font-size="13" text-anchor="middle" style="fill:#8a94a3">untouched</text>
+  <text x="684" y="283" font-size="14" text-anchor="middle">global suite: green</text>
+
+  <text x="80" y="366" font-size="14" text-anchor="middle">1 scope</text>
+  <text x="195" y="366" font-size="14" text-anchor="middle">2 build</text>
+  <text x="310" y="366" font-size="14" text-anchor="middle">3 test</text>
+  <text x="445" y="366" font-size="14" text-anchor="middle" font-weight="700" style="fill:#e5484d">4 review</text>
+  <text x="585" y="366" font-size="14" text-anchor="middle">5 merge</text>
+  <text x="712" y="366" font-size="14" text-anchor="middle">6 global check</text>
+
+  <text x="400" y="404" font-size="15" text-anchor="middle" style="fill:#5b6573">The robot builds and tests inside the fence. Only the developer's approve opens the gate.</text>
+</svg>

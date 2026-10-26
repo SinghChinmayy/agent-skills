@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-label="Flow diagram of the six modular-development phases. Row one, inside a dashed box marked scope locked: 1 scope declaration by the developer, 2 isolated build by the AI, 3 module tests by the AI. Then 4 the developer review gate: approve goes on to 5 controlled merge into listed integration files only, then 6 global test check, then done when the full suite is green. Revise loops back to module tests; abort discards the work.">
+  <defs>
+    <filter id="w" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="6"/>
+      <feDisplacementMap in="SourceGraphic" scale="2.2"/>
+    </filter>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2b2b2b"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#e5484d"/></marker>
+    <style>
+      text{font-family:'Comic Neue','Chalkboard SE','Comic Sans MS','Marker Felt',cursive;fill:#2b2b2b}
+      .mono{font-family:'SF Mono',Menlo,Consolas,monospace}
+      .s{stroke:#2b2b2b;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect width="800" height="460" rx="18" fill="#fffdf7"/>
+  <g filter="url(#w)">
+    <rect x="283" y="66" width="499" height="110" rx="14" class="s" style="stroke:#7c5cd6" stroke-dasharray="7 6"/>
+    <rect x="30" y="80" width="210" height="84" rx="10" style="fill:#ebe3fd" class="s" stroke="#7c5cd6"/>
+    <rect x="295" y="80" width="210" height="84" rx="10" style="fill:#fff1c7" class="s" stroke="#c99a1e"/>
+    <rect x="560" y="80" width="210" height="84" rx="10" style="fill:#d3f3e1" class="s" stroke="#30a46c"/>
+    <path d="M244 122 L291 122" class="s" marker-end="url(#a)"/>
+    <path d="M509 122 L556 122" class="s" marker-end="url(#a)"/>
+    <rect x="560" y="240" width="210" height="84" rx="10" style="fill:#ffd6d7" class="s" stroke="#e5484d"/>
+    <rect x="295" y="240" width="210" height="84" rx="10" style="fill:#dbe7ff" class="s" stroke="#276ef1"/>
+    <rect x="30" y="240" width="210" height="84" rx="10" style="fill:#d3f3e1" class="s" stroke="#30a46c"/>
+    <path d="M640 168 L640 236" class="s" marker-end="url(#a)"/>
+    <path d="M740 238 L740 170" class="s" stroke="#e5484d" stroke-dasharray="7 6" marker-end="url(#ar)"/>
+    <path d="M556 282 L509 282" class="s" marker-end="url(#a)"/>
+    <path d="M291 282 L244 282" class="s" marker-end="url(#a)"/>
+    <rect x="560" y="364" width="210" height="44" rx="10" style="fill:#eef1f5" class="s" stroke="#8a94a3" stroke-dasharray="7 6"/>
+    <path d="M665 328 L665 360" class="s" marker-end="url(#a)"/>
+    <rect x="30" y="364" width="210" height="44" rx="10" style="fill:#d3f3e1" class="s" stroke="#30a46c"/>
+    <path d="M135 328 L135 360" class="s" marker-end="url(#a)"/>
+  </g>
+  <text x="400" y="36" font-size="20" text-anchor="middle" font-weight="700" style="fill:#2b2b2b">Six phases, one gate</text>
+  <text x="532" y="60" font-size="13" text-anchor="middle" style="fill:#7c5cd6">scope LOCKED to FILES IN SCOPE</text>
+  <text x="135.0" y="107.8" font-size="15" text-anchor="middle" font-weight="700">1  Scope declaration</text>
+  <text x="135.0" y="127.2" font-size="13" text-anchor="middle" style="fill:#5b6573">dev: lists FILES IN SCOPE</text>
+  <text x="135.0" y="146.8" font-size="13" text-anchor="middle" style="fill:#5b6573">AI echoes it, waits for OK</text>
+  <text x="400.0" y="107.8" font-size="15" text-anchor="middle" font-weight="700">2  Isolated build</text>
+  <text x="400.0" y="127.2" font-size="13" text-anchor="middle" style="fill:#5b6573">AI: in-scope files only</text>
+  <text x="400.0" y="146.8" font-size="13" text-anchor="middle" style="fill:#5b6573">missing dep? STOP + report</text>
+  <text x="665.0" y="107.8" font-size="15" text-anchor="middle" font-weight="700">3  Module tests</text>
+  <text x="665.0" y="127.2" font-size="13" text-anchor="middle" style="fill:#5b6573">AI: mocks, edge + error cases</text>
+  <text x="665.0" y="146.8" font-size="13" text-anchor="middle" style="fill:#5b6573">80% lines, one command</text>
+  <text x="665.0" y="267.8" font-size="15" text-anchor="middle" font-weight="700">4  Review gate</text>
+  <text x="665.0" y="287.2" font-size="13" text-anchor="middle" style="fill:#5b6573">dev: reads code + test output</text>
+  <text x="665.0" y="306.8" font-size="13" text-anchor="middle" style="fill:#5b6573">approve / revise / abort</text>
+  <text x="400.0" y="267.8" font-size="15" text-anchor="middle" font-weight="700">5  Controlled merge</text>
+  <text x="400.0" y="287.2" font-size="13" text-anchor="middle" style="fill:#5b6573">AI: listed integration files</text>
+  <text x="400.0" y="306.8" font-size="13" text-anchor="middle" style="fill:#5b6573">additive changes only</text>
+  <text x="135.0" y="267.8" font-size="15" text-anchor="middle" font-weight="700">6  Global test check</text>
+  <text x="135.0" y="287.2" font-size="13" text-anchor="middle" style="fill:#5b6573">AI: run the full suite</text>
+  <text x="135.0" y="306.8" font-size="13" text-anchor="middle" style="fill:#5b6573">fix only its own breakage</text>
+  <text x="768" y="208" font-size="13" text-anchor="middle" style="fill:#e5484d">revise</text>
+  <text x="532" y="272" font-size="13" text-anchor="middle" style="fill:#5b6573">approve</text>
+  <text x="665.0" y="390.9" font-size="14" text-anchor="middle">abort: discard the module</text>
+  <text x="135.0" y="390.9" font-size="14" text-anchor="middle">done: suite fully green</text>
+  <text x="400" y="444" font-size="14" text-anchor="middle" style="fill:#5b6573">Anything outside scope: STOP and ask. Unrelated bug: note it, do not fix it.</text>
+</svg>

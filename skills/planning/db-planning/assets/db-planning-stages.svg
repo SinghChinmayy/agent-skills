@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" role="img" aria-label="Flow diagram of the db-planning skill. Stage 1, the interview, walks seven branches in order: purpose, entities, access patterns, scale, rules, tech, ops. When every branch is resolved or you say done, stage 2 writes versioned DBML and Markdown files: v0/stage-1 first, v0/stage-1.1 for a small tweak, v0/stage-2 for a big shift, and v1/stage-1 in a new session.">
+  <defs>
+    <filter id="w" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="14"/>
+      <feDisplacementMap in="SourceGraphic" scale="2.2"/>
+    </filter>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2b2b2b"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#e5484d"/></marker>
+    <style>
+      text{font-family:'Comic Neue','Chalkboard SE','Comic Sans MS','Marker Felt',cursive;fill:#2b2b2b}
+      .mono{font-family:'SF Mono',Menlo,Consolas,monospace}
+      .s{stroke:#2b2b2b;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect width="800" height="430" rx="18" fill="#fffdf7"/>
+  <g filter="url(#w)">
+    <rect x="27" y="72" width="98" height="58" rx="10" style="fill:#ebe3fd" class="s" stroke="#7c5cd6"/>
+    <rect x="135" y="72" width="98" height="58" rx="10" style="fill:#ebe3fd" class="s" stroke="#7c5cd6"/>
+    <path d="M124 101 L133 101" class="s" marker-end="url(#a)"/>
+    <rect x="243" y="72" width="98" height="58" rx="10" style="fill:#ebe3fd" class="s" stroke="#7c5cd6"/>
+    <path d="M232 101 L241 101" class="s" marker-end="url(#a)"/>
+    <rect x="351" y="72" width="98" height="58" rx="10" style="fill:#ebe3fd" class="s" stroke="#7c5cd6"/>
+    <path d="M340 101 L349 101" class="s" marker-end="url(#a)"/>
+    <rect x="459" y="72" width="98" height="58" rx="10" style="fill:#ebe3fd" class="s" stroke="#7c5cd6"/>
+    <path d="M448 101 L457 101" class="s" marker-end="url(#a)"/>
+    <rect x="567" y="72" width="98" height="58" rx="10" style="fill:#ebe3fd" class="s" stroke="#7c5cd6"/>
+    <path d="M556 101 L565 101" class="s" marker-end="url(#a)"/>
+    <rect x="675" y="72" width="98" height="58" rx="10" style="fill:#ebe3fd" class="s" stroke="#7c5cd6"/>
+    <path d="M664 101 L673 101" class="s" marker-end="url(#a)"/>
+    <path d="M725 134 L725 182 L100 182 L100 246" class="s" marker-end="url(#a)"/>
+    <rect x="20" y="250" width="160" height="66" rx="10" style="fill:#d3f3e1" class="s" stroke="#30a46c"/>
+    <rect x="220" y="250" width="160" height="66" rx="10" style="fill:#fff1c7" class="s" stroke="#c99a1e"/>
+    <path d="M182 283 L216 283" class="s" marker-end="url(#a)"/>
+    <rect x="420" y="250" width="160" height="66" rx="10" style="fill:#dbe7ff" class="s" stroke="#276ef1"/>
+    <path d="M382 283 L416 283" class="s" marker-end="url(#a)"/>
+    <rect x="620" y="250" width="160" height="66" rx="10" style="fill:#eef1f5" class="s" stroke="#8a94a3"/>
+    <path d="M582 283 L616 283" class="s" marker-end="url(#a)"/>
+  </g>
+  <text x="30" y="50" font-size="16" text-anchor="start" font-weight="700" style="fill:#2b2b2b">STAGE 1  interview: one question at a time, each with a recommended answer</text>
+  <text x="76.0" y="96.8" font-size="14" text-anchor="middle" font-weight="700">1 Purpose</text>
+  <text x="76.0" y="115.0" font-size="12" text-anchor="middle" style="fill:#5b6573">domain, users</text>
+  <text x="184.0" y="96.8" font-size="14" text-anchor="middle" font-weight="700">2 Entities</text>
+  <text x="184.0" y="115.0" font-size="12" text-anchor="middle" style="fill:#5b6573">1:1, 1:N, M:N</text>
+  <text x="292.0" y="96.8" font-size="14" text-anchor="middle" font-weight="700">3 Access</text>
+  <text x="292.0" y="115.0" font-size="12" text-anchor="middle" style="fill:#5b6573">reads, writes</text>
+  <text x="400.0" y="96.8" font-size="14" text-anchor="middle" font-weight="700">4 Scale</text>
+  <text x="400.0" y="115.0" font-size="12" text-anchor="middle" style="fill:#5b6573">rows, bursts</text>
+  <text x="508.0" y="96.8" font-size="14" text-anchor="middle" font-weight="700">5 Rules</text>
+  <text x="508.0" y="115.0" font-size="12" text-anchor="middle" style="fill:#5b6573">GDPR, retention</text>
+  <text x="616.0" y="96.8" font-size="14" text-anchor="middle" font-weight="700">6 Tech</text>
+  <text x="616.0" y="115.0" font-size="12" text-anchor="middle" style="fill:#5b6573">engine, ORM</text>
+  <text x="724.0" y="96.8" font-size="14" text-anchor="middle" font-weight="700">7 Ops</text>
+  <text x="724.0" y="115.0" font-size="12" text-anchor="middle" style="fill:#5b6573">HA, backups</text>
+  <text x="412" y="174" font-size="13" text-anchor="middle" style="fill:#5b6573">every branch resolved, or you say "done" / "enough" / "move on"</text>
+  <text x="118" y="228" font-size="16" text-anchor="start" font-weight="700" style="fill:#2b2b2b">STAGE 2  versioned plan files under planning/db/</text>
+  <text x="100.0" y="268.8" font-size="15" text-anchor="middle" font-weight="700">v0/stage-1</text>
+  <text x="100.0" y="288.2" font-size="13" text-anchor="middle" class="mono" style="fill:#5b6573">first snapshot</text>
+  <text x="100.0" y="307.8" font-size="13" text-anchor="middle" class="mono" style="fill:#5b6573">.dbml + .md</text>
+  <text x="300.0" y="268.8" font-size="15" text-anchor="middle" font-weight="700">v0/stage-1.1</text>
+  <text x="300.0" y="288.2" font-size="13" text-anchor="middle" class="mono" style="fill:#5b6573">small tweak</text>
+  <text x="300.0" y="307.8" font-size="13" text-anchor="middle" class="mono" style="fill:#5b6573">.dbml + .md</text>
+  <text x="500.0" y="268.8" font-size="15" text-anchor="middle" font-weight="700">v0/stage-2</text>
+  <text x="500.0" y="288.2" font-size="13" text-anchor="middle" class="mono" style="fill:#5b6573">major shift</text>
+  <text x="500.0" y="307.8" font-size="13" text-anchor="middle" class="mono" style="fill:#5b6573">.dbml + .md</text>
+  <text x="700.0" y="268.8" font-size="15" text-anchor="middle" font-weight="700">v1/stage-1</text>
+  <text x="700.0" y="288.2" font-size="13" text-anchor="middle" class="mono" style="fill:#5b6573">new session</text>
+  <text x="700.0" y="307.8" font-size="13" text-anchor="middle" class="mono" style="fill:#5b6573">.dbml + .md</text>
+  <text x="400" y="350" font-size="13" text-anchor="middle" style="fill:#5b6573">.md: summary, entities, relationships, access patterns, decisions, open questions, change log</text>
+  <text x="400" y="372" font-size="13" text-anchor="middle" style="fill:#5b6573">.dbml: tables, keys, indexes, notes, Ref lines</text>
+  <text x="400" y="410" font-size="15" text-anchor="middle" style="fill:#5b6573">Nothing is overwritten: each edit is a new file, so the design history stays readable.</text>
+</svg>

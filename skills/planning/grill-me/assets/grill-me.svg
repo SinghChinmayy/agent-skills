@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="Sketch: a robot holding a clipboard asks question 17 of 40, what happens when two people buy the last car at the same time, and suggests an answer; the sweating developer thinks they had not thought about that.">
+  <defs>
+    <filter id="w" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="9"/>
+      <feDisplacementMap in="SourceGraphic" scale="2.6"/>
+    </filter>
+    <symbol id="bot" viewBox="0 0 80 110">
+      <line x1="40" y1="5" x2="40" y2="16" class="s"/>
+      <circle cx="40" cy="5" r="4" style="fill:#e5484d" class="s"/>
+      <rect x="10" y="16" width="60" height="40" rx="11" style="fill:#dde3ea" class="s"/>
+      <circle cx="28" cy="34" r="5" fill="#2b2b2b"/><circle cx="52" cy="34" r="5" fill="#2b2b2b"/>
+      <circle cx="30" cy="32" r="1.6" fill="#fff"/><circle cx="54" cy="32" r="1.6" fill="#fff"/>
+      <path d="M31 45 Q40 52 49 45" class="s"/>
+      <circle cx="19" cy="45" r="3.5" fill="#f6a5a5"/><circle cx="61" cy="45" r="3.5" fill="#f6a5a5"/>
+      <rect x="18" y="60" width="44" height="34" rx="8" style="fill:#c9d3df" class="s"/>
+      <circle cx="40" cy="77" r="5" style="fill:#30a46c" class="s"/>
+      <path d="M18 68 L6 82 M30 94 L30 106 M50 94 L50 106" class="s"/>
+    </symbol>
+    <style>
+      text{font-family:'Comic Neue','Chalkboard SE','Comic Sans MS','Marker Felt',cursive;fill:#2b2b2b}
+      .s{stroke:#2b2b2b;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect width="800" height="400" rx="18" fill="#fffdf7"/>
+
+  <g filter="url(#w)">
+    <!-- robot speech bubble -->
+    <path d="M40 30 h400 a14 14 0 0 1 14 14 v100 a14 14 0 0 1 -14 14 h-300 l-26 30 l2 -30 h-76 a14 14 0 0 1 -14 -14 v-100 a14 14 0 0 1 14 -14 z" style="fill:#fff" class="s"/>
+    <!-- clipboard -->
+    <rect x="186" y="226" width="62" height="80" rx="6" style="fill:#f5c451" class="s"/>
+    <rect x="194" y="236" width="46" height="62" rx="3" style="fill:#fff" class="s"/>
+    <rect x="206" y="220" width="22" height="12" rx="3" style="fill:#c9d3df" class="s"/>
+    <path d="M200 250 h34 M200 262 h34 M200 274 h24 M200 286 h30" class="s" stroke-width="1.8"/>
+    <path d="M200 262 l4 4 l8 -10" class="s" stroke="#30a46c"/>
+    <!-- robot arm holding clipboard -->
+    <path d="M141 279 L190 270" class="s"/>
+
+    <!-- dev -->
+    <circle cx="610" cy="230" r="26" style="fill:#ffe3c4" class="s"/>
+    <path d="M588 218 q22 -26 44 0" class="s" stroke-width="5"/>
+    <circle cx="600" cy="230" r="5" style="fill:#fff" class="s"/><circle cx="620" cy="230" r="5" style="fill:#fff" class="s"/>
+    <circle cx="600" cy="231" r="1.8" fill="#2b2b2b"/><circle cx="620" cy="231" r="1.8" fill="#2b2b2b"/>
+    <ellipse cx="610" cy="246" rx="4" ry="5" class="s"/>
+    <path d="M640 210 q6 10 0 16 q-6 -6 0 -16 z" fill="#8fd3f4" stroke="#2b2b2b" stroke-width="1.8"/>
+    <path d="M648 236 q5 8 0 13 q-5 -5 0 -13 z" fill="#8fd3f4" stroke="#2b2b2b" stroke-width="1.8"/>
+    <path d="M610 256 L610 330 M610 330 L590 380 M610 330 L630 380 M610 272 L578 252 M610 272 L644 252" class="s"/>
+    <!-- thought cloud -->
+    <path d="M560 90 q-10 -34 26 -40 q14 -26 48 -14 q30 -18 52 8 q36 0 30 34 q22 22 -6 40 q-6 28 -40 20 q-24 20 -50 4 q-34 12 -46 -14 q-30 -6 -14 -38 z" style="fill:#fff" class="s"/>
+    <circle cx="596" cy="168" r="8" style="fill:#fff" class="s"/>
+    <circle cx="604" cy="190" r="5" style="fill:#fff" class="s"/>
+  </g>
+  <use href="#bot" x="40" y="168" width="130" height="179"/>
+
+  <text x="60" y="62" font-size="17" font-weight="700">Question 17 of 40:</text>
+  <text x="60" y="90" font-size="17">Two people tap Buy on the last car at</text>
+  <text x="60" y="114" font-size="17">the same time. Who gets it?</text>
+  <text x="60" y="142" font-size="16" style="fill:#276ef1">My recommendation: one wins, one gets a 409.</text>
+
+  <text x="626" y="98" font-size="15" text-anchor="middle">...I had not</text>
+  <text x="626" y="120" font-size="15" text-anchor="middle">thought about that</text>
+
+  <text x="400" y="390" font-size="15" text-anchor="middle" style="fill:#5b6573">The grill-me interview: one question at a time, each with a recommended answer. You make the call.</text>
+</svg>

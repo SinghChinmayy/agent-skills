@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-label="Two-panel comic. Left, naive code that reads, subtracts and writes: twenty buyers all get a key for five cars, the counter says sold 20 with stock 5, and the dealer panics. Right, one atomic UPDATE with WHERE quantity greater than zero: exactly five buyers get keys, fifteen get a polite 409, and stock ends at 0.">
+  <defs>
+    <filter id="w" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="5"/>
+      <feDisplacementMap in="SourceGraphic" scale="2.4"/>
+    </filter>
+    <symbol id="p" viewBox="0 0 24 44">
+      <circle cx="12" cy="8" r="6" style="fill:#ffe3c4" class="t"/>
+      <path d="M12 14 L12 30 M12 30 L6 42 M12 30 L18 42 M12 19 L4 26 M12 19 L20 24" class="t"/>
+    </symbol>
+    <symbol id="key" viewBox="0 0 16 16">
+      <circle cx="5" cy="8" r="4" style="fill:#f5c451" class="t"/>
+      <path d="M9 8 L15 8 M13 8 L13 11" class="t"/>
+    </symbol>
+    <symbol id="car" viewBox="0 0 70 36">
+      <path d="M4 26 L4 18 Q6 12 14 12 L22 4 L46 4 L56 12 Q66 13 66 20 L66 26 Z" style="fill:#bcd3ff" class="s"/>
+      <path d="M25 8 L44 8 L50 13 L20 13 Z" style="fill:#fff" class="t"/>
+      <circle cx="18" cy="27" r="6" style="fill:#2b2b2b"/><circle cx="52" cy="27" r="6" style="fill:#2b2b2b"/>
+    </symbol>
+    <style>
+      text{font-family:'Comic Neue','Chalkboard SE','Comic Sans MS','Marker Felt',cursive;fill:#2b2b2b}
+      .s{stroke:#2b2b2b;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .t{stroke:#2b2b2b;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .mono{font-family:'SF Mono',Menlo,Consolas,monospace}
+    </style>
+  </defs>
+  <rect width="800" height="440" rx="18" fill="#fffdf7"/>
+  <g filter="url(#w)">
+    <rect x="18" y="18" width="372" height="404" rx="12" style="fill:#fff5f5" class="s"/>
+    <rect x="410" y="18" width="372" height="404" rx="12" style="fill:#f2fbf6" class="s"/>
+  </g>
+
+<text x="204" y="50" font-size="18" font-weight="700" text-anchor="middle">naive: read → subtract → write</text>
+<use href="#car" x="36" y="66" width="62" height="32"/>
+<use href="#car" x="104" y="66" width="62" height="32"/>
+<use href="#car" x="172" y="66" width="62" height="32"/>
+<use href="#car" x="240" y="66" width="62" height="32"/>
+<use href="#car" x="308" y="66" width="62" height="32"/>
+<use href="#p" x="40" y="116" width="24" height="44"/>
+<use href="#key" x="57" y="130" width="14" height="14"/>
+<use href="#p" x="74" y="116" width="24" height="44"/>
+<use href="#key" x="91" y="130" width="14" height="14"/>
+<use href="#p" x="108" y="116" width="24" height="44"/>
+<use href="#key" x="125" y="130" width="14" height="14"/>
+<use href="#p" x="142" y="116" width="24" height="44"/>
+<use href="#key" x="159" y="130" width="14" height="14"/>
+<use href="#p" x="176" y="116" width="24" height="44"/>
+<use href="#key" x="193" y="130" width="14" height="14"/>
+<use href="#p" x="210" y="116" width="24" height="44"/>
+<use href="#key" x="227" y="130" width="14" height="14"/>
+<use href="#p" x="244" y="116" width="24" height="44"/>
+<use href="#key" x="261" y="130" width="14" height="14"/>
+<use href="#p" x="278" y="116" width="24" height="44"/>
+<use href="#key" x="295" y="130" width="14" height="14"/>
+<use href="#p" x="312" y="116" width="24" height="44"/>
+<use href="#key" x="329" y="130" width="14" height="14"/>
+<use href="#p" x="346" y="116" width="24" height="44"/>
+<use href="#key" x="363" y="130" width="14" height="14"/>
+<use href="#p" x="40" y="170" width="24" height="44"/>
+<use href="#key" x="57" y="184" width="14" height="14"/>
+<use href="#p" x="74" y="170" width="24" height="44"/>
+<use href="#key" x="91" y="184" width="14" height="14"/>
+<use href="#p" x="108" y="170" width="24" height="44"/>
+<use href="#key" x="125" y="184" width="14" height="14"/>
+<use href="#p" x="142" y="170" width="24" height="44"/>
+<use href="#key" x="159" y="184" width="14" height="14"/>
+<use href="#p" x="176" y="170" width="24" height="44"/>
+<use href="#key" x="193" y="184" width="14" height="14"/>
+<use href="#p" x="210" y="170" width="24" height="44"/>
+<use href="#key" x="227" y="184" width="14" height="14"/>
+<use href="#p" x="244" y="170" width="24" height="44"/>
+<use href="#key" x="261" y="184" width="14" height="14"/>
+<use href="#p" x="278" y="170" width="24" height="44"/>
+<use href="#key" x="295" y="184" width="14" height="14"/>
+<use href="#p" x="312" y="170" width="24" height="44"/>
+<use href="#key" x="329" y="184" width="14" height="14"/>
+<use href="#p" x="346" y="170" width="24" height="44"/>
+<use href="#key" x="363" y="184" width="14" height="14"/>
+<g filter="url(#w)"><rect x="40" y="246" width="200" height="66" rx="8" style="fill:#fff" class="s"/></g>
+<text x="56" y="272" font-size="15" class="mono" style="fill:#e5484d">sold:  20</text>
+<text x="56" y="296" font-size="15" class="mono">cars:   5 ??</text>
+<g filter="url(#w)">
+  <circle cx="310" cy="282" r="22" style="fill:#ffe3c4" class="s"/>
+  <circle cx="302" cy="279" r="4" style="fill:#fff" class="s"/><circle cx="318" cy="279" r="4" style="fill:#fff" class="s"/>
+  <ellipse cx="310" cy="294" rx="5" ry="6" class="s"/>
+  <path d="M310 304 L310 360 M310 360 L296 400 M310 360 L324 400 M310 318 L286 290 M310 318 L334 290" class="s"/>
+  <path d="M286 262 l-8 -12 M334 262 l8 -12 M310 250 l0 -14" class="s" stroke="#e5484d"/>
+</g>
+<text x="140" y="348" font-size="15" text-anchor="middle">every buyer "sees" stock</text>
+<text x="140" y="368" font-size="15" text-anchor="middle">before anyone writes</text>
+<text x="150" y="410" font-size="15" text-anchor="middle" style="fill:#e5484d">test: RED (20 sold, 5 cars)</text>
+<text x="596" y="50" font-size="18" font-weight="700" text-anchor="middle">atomic: one conditional UPDATE</text>
+<use href="#car" x="428" y="66" width="62" height="32"/>
+<use href="#car" x="496" y="66" width="62" height="32"/>
+<use href="#car" x="564" y="66" width="62" height="32"/>
+<use href="#car" x="632" y="66" width="62" height="32"/>
+<use href="#car" x="700" y="66" width="62" height="32"/>
+<use href="#p" x="432" y="116" width="24" height="44"/>
+<use href="#key" x="449" y="130" width="14" height="14"/>
+<use href="#p" x="466" y="116" width="24" height="44"/>
+<use href="#key" x="483" y="130" width="14" height="14"/>
+<use href="#p" x="500" y="116" width="24" height="44"/>
+<use href="#key" x="517" y="130" width="14" height="14"/>
+<use href="#p" x="534" y="116" width="24" height="44"/>
+<use href="#key" x="551" y="130" width="14" height="14"/>
+<use href="#p" x="568" y="116" width="24" height="44"/>
+<use href="#key" x="585" y="130" width="14" height="14"/>
+<use href="#p" x="602" y="116" width="24" height="44"/>
+<rect x="614" y="110" width="26" height="14" rx="4" style="fill:#e5484d"/><text x="627" y="121" font-size="10" text-anchor="middle" class="mono" style="fill:#fff">409</text>
+<use href="#p" x="636" y="116" width="24" height="44"/>
+<rect x="648" y="110" width="26" height="14" rx="4" style="fill:#e5484d"/><text x="661" y="121" font-size="10" text-anchor="middle" class="mono" style="fill:#fff">409</text>
+<use href="#p" x="670" y="116" width="24" height="44"/>
+<rect x="682" y="110" width="26" height="14" rx="4" style="fill:#e5484d"/><text x="695" y="121" font-size="10" text-anchor="middle" class="mono" style="fill:#fff">409</text>
+<use href="#p" x="704" y="116" width="24" height="44"/>
+<rect x="716" y="110" width="26" height="14" rx="4" style="fill:#e5484d"/><text x="729" y="121" font-size="10" text-anchor="middle" class="mono" style="fill:#fff">409</text>
+<use href="#p" x="738" y="116" width="24" height="44"/>
+<rect x="750" y="110" width="26" height="14" rx="4" style="fill:#e5484d"/><text x="763" y="121" font-size="10" text-anchor="middle" class="mono" style="fill:#fff">409</text>
+<use href="#p" x="432" y="170" width="24" height="44"/>
+<rect x="444" y="164" width="26" height="14" rx="4" style="fill:#e5484d"/><text x="457" y="175" font-size="10" text-anchor="middle" class="mono" style="fill:#fff">409</text>
+<use href="#p" x="466" y="170" width="24" height="44"/>
+<rect x="478" y="164" width="26" height="14" rx="4" style="fill:#e5484d"/><text x="491" y="175" font-size="10" text-anchor="middle" class="mono" style="fill:#fff">409</text>
+<use href="#p" x="500" y="170" width="24" height="44"/>
+<rect x="512" y="164" width="26" height="14" rx="4" style="fill:#e5484d"/><text x="525" y="175" font-size="10" text-anchor="middle" class="mono" style="fill:#fff">409</text>
+<use href="#p" x="534" y="170" width="24" height="44"/>
+<rect x="546" y="164" width="26" height="14" rx="4" style="fill:#e5484d"/><text x="559" y="175" font-size="10" text-anchor="middle" class="mono" style="fill:#fff">409</text>
+<use href="#p" x="568" y="170" width="24" height="44"/>
+<rect x="580" y="164" width="26" height="14" rx="4" style="fill:#e5484d"/><text x="593" y="175" font-size="10" text-anchor="middle" class="mono" style="fill:#fff">409</text>
+<use href="#p" x="602" y="170" width="24" height="44"/>
+<rect x="614" y="164" width="26" height="14" rx="4" style="fill:#e5484d"/><text x="627" y="175" font-size="10" text-anchor="middle" class="mono" style="fill:#fff">409</text>
+<use href="#p" x="636" y="170" width="24" height="44"/>
+<rect x="648" y="164" width="26" height="14" rx="4" style="fill:#e5484d"/><text x="661" y="175" font-size="10" text-anchor="middle" class="mono" style="fill:#fff">409</text>
+<use href="#p" x="670" y="170" width="24" height="44"/>
+<rect x="682" y="164" width="26" height="14" rx="4" style="fill:#e5484d"/><text x="695" y="175" font-size="10" text-anchor="middle" class="mono" style="fill:#fff">409</text>
+<use href="#p" x="704" y="170" width="24" height="44"/>
+<rect x="716" y="164" width="26" height="14" rx="4" style="fill:#e5484d"/><text x="729" y="175" font-size="10" text-anchor="middle" class="mono" style="fill:#fff">409</text>
+<use href="#p" x="738" y="170" width="24" height="44"/>
+<rect x="750" y="164" width="26" height="14" rx="4" style="fill:#e5484d"/><text x="763" y="175" font-size="10" text-anchor="middle" class="mono" style="fill:#fff">409</text>
+<g filter="url(#w)"><rect x="428" y="246" width="340" height="96" rx="8" style="fill:#fff" class="s"/></g>
+<text x="442" y="270" font-size="12.5" class="mono">UPDATE vehicle_listings</text>
+<text x="442" y="288" font-size="12.5" class="mono">SET quantity = quantity - 1</text>
+<text x="442" y="306" font-size="12.5" class="mono">WHERE id = :id AND quantity &gt; 0</text>
+<text x="442" y="324" font-size="12.5" class="mono">RETURNING ...</text>
+<text x="596" y="370" font-size="15" text-anchor="middle">5 keys, 15 polite 409s, stock 0</text>
+<text x="596" y="408" font-size="15" text-anchor="middle" style="fill:#30a46c">test: GREEN</text>
+</svg>
