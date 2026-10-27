@@ -26,9 +26,14 @@ The learner's own model, analogy or mnemonic, in their words.
 
 Plain-language explanation in short sections. Define terms on first use.
 
+## How it works            (for algorithms and processes)
+
+1. Plain, numbered steps first.
+2. Then the detail each step needs.
+
 ## Example
 
-A small, correct, runnable example, then what each important part does.
+A small, correct example that you have actually run, with its real output, then what each important part does.
 
 ![Alt text that says what the diagram shows.](./assets/<topic>-<name>.svg)
 *One-line caption.*
@@ -42,6 +47,10 @@ A small, correct, runnable example, then what each important part does.
 ## Practice
 
 - [001 · Data Science Skills](../../practice/sql/001-data-science-skills.md)
+
+## Further explanation      (references the learner used or linked)
+
+- Video: [Real title](https://www.youtube.com/watch?v=…) by Real author, and one line on what it covers.
 
 ## My notebook pages            (only if the repository keeps them)
 

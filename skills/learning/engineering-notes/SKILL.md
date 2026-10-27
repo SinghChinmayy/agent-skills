@@ -41,7 +41,7 @@ scripts/check_notes.py  front-matter validator (run before committing)
 
 ### 1. Inventory the inbox
 
-List every file in `inbox/` except `README.md`. Accept `.md`, `.txt`, images (`.jpg`, `.jpeg`, `.png`, `.heic`, `.webp`) and `.pdf`. Tell the user what you found in one short list before changing anything.
+List every file in `inbox/` except `README.md`. Accept `.md`, `.txt`, images (`.jpg`, `.jpeg`, `.png`, `.heic`, `.webp`) and `.pdf`. Also collect any links the user gives with them (videos, articles, docs). Tell the user what you found in one short list before changing anything.
 
 ### 2. Read, and transcribe handwriting faithfully
 
@@ -58,6 +58,7 @@ For each input, pull out:
 - **Examples**: code, queries, commands, worked numbers.
 - **Mistakes and doubts**: things they got wrong, crossed out, or wrote as questions.
 - **Practice**: exercises, interview questions, solved problems.
+- **References**: videos, articles or docs the learner used or linked. Look up each one's real title and author (for a YouTube link, its oEmbed endpoint gives both) and list it under `## Further explanation`. Never describe what a video or page says unless you have actually read it or its transcript; cite it as further reading instead.
 
 Check every technical claim. If the notebook is wrong, keep what they wrote and add a visible correction (see the template). A visible correction is more useful for revision, and more honest, than a silent rewrite.
 
@@ -68,23 +69,26 @@ Check every technical claim. If the notebook is wrong, keep what they wrote and 
 - **New topic**: create `notes/<subject>/<topic>.md` from `references/note-template.md`.
 - **Exercises** go to `practice/<subject>/NNN-<slug>.md` (next unused three-digit number), with the question, the learner's attempt if any, a correct solution, and "what this demonstrates". Link it from the related note's `## Practice`.
 - If one input covers several topics, split it across their notes.
+- Link notes and practice files to each other with relative `.md` paths (`../../practice/sql/001-….md`). They work on GitHub, and the website rewrites them to its own URLs.
 
 ### 5. Write in the learner's voice
 
 - Write as the learner explaining it to their future self: first person where their notes are first person, plain language, short sections.
 - Keep their analogies under **How I think about it**, even if informal, as long as they are not wrong.
 - Define each term on first use. Prefer one small, correct example over three vague ones.
+- **Algorithms and processes** (hashing, TCP handshakes, garbage collection, a sort) get a short numbered **How it works**: plain steps first, then detail. If the learner asked for "a simple algorithm", this is where it goes.
+- **Run every code example** before committing, and paste its real output. If you add an implementation, test it against a trusted reference (a standard library, a known answer) on a few inputs, including edge cases. Code that has not run does not go in a note.
 - Every note ends with the revision block: 3–5 **Key takeaways** and 3–5 **Check yourself** questions with answers inside `<details>`.
 
 ### 6. Diagrams: only when they earn their place
 
-Add a diagram when the idea is about **order** (a pipeline, a request path, query evaluation), **structure** (trees, tables and keys, memory layout), **state** (transitions, lifecycles), or a **spatial comparison** (before and after). Do not add one for definitions, lists or anything a single sentence explains.
+Add a diagram, or a small illustration, when the idea is about **order** (a pipeline, a request path, query evaluation), **structure** (trees, tables and keys, memory layout), **state** (transitions, lifecycles), or a **spatial comparison** (before and after). Do not add one for definitions, lists or anything a single sentence explains.
 
 - At most two per note. Each needs alt text that states what it shows, plus a one-line caption.
 - Use the sketch style in `references/diagram-style.md`: hand-drawn SVG, readable in light and dark mode. A small cute touch is welcome when it makes the idea memorable, never at the expense of accuracy.
 - Save as `notes/<subject>/assets/<topic>-<name>.svg` and reference it relatively. Validate with `xmllint --noout` and look at a render before keeping it.
 
-### 7. Validate, log, tidy
+### 7. Keep pages, validate, log, tidy
 
 1. **Keep the notebook pages, if the repository opts in.** Only when the notes repository's `AGENTS.md` says to keep notebook pages:
    1. Resize each photo to about 1500×2000 and compress it (`sips -Z 2000 -s formatOptions 72 in.jpg --out out.jpg` on macOS, or `magick in.jpg -resize 2000x2000 -quality 72 out.jpg`).
@@ -98,7 +102,14 @@ Add a diagram when the idea is about **order** (a pipeline, a request path, quer
 
 ### 8. Commit; publish only on the user's word
 
-Commit with `notes(<subject>): <what was learned>`, one commit per processed batch. Show the user the list of changed notes and a two-line summary of each. **Do not push** until the user says so: pushing to `main` publishes to the website through CI.
+Commit with `notes(<subject>): <what was learned>`, one commit per processed batch, on a branch named `notes-<topic>`. Show the user the list of changed notes and a two-line summary of each.
+
+**Do not publish** until the user says so. Publishing means one of the routes the repository's `AGENTS.md` describes, usually:
+
+- **Pull request** (preferred): push the branch and open a PR. If the repository auto-merges notes-only PRs, CI validates, merges and publishes it. Keep these PRs to notes content only (`notes/`, `practice/`, `log.md`, `README.md`). Put any change to scripts, workflows or `AGENTS.md` in a separate PR, because those wait for a human review.
+- **Push to `main`**: CI validates and publishes directly.
+
+After publishing, confirm it: the CI run passed, the website received the sync commit, and the note's page loads.
 
 ## Rules
 
