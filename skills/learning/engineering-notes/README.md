@@ -11,7 +11,7 @@ You study the way you already do: a paper notebook, a quick Markdown file. Drop 
 1. **Transcribes** handwriting faithfully, and asks about the words it can't read instead of guessing them.
 2. **Extracts the essence**: the concepts, *your* analogies and mental models, examples, mistakes and doubts.
 3. **Merges** it into one continuous note per topic (`notes/<subject>/<topic>.md`), so a new page on joins extends the joins note instead of starting another one.
-4. **Checks everything**: every claim is fact-checked, and every code example is run (implementations are tested against a trusted reference). Wrong claims stay with a clear *Correction*, which is better for revision than a silent rewrite.
+4. **Checks everything**: every claim is fact-checked, and every code example is run (implementations are tested against a trusted reference). Anything your notebook got wrong is fixed silently, so the note reads as a clean, correct explanation and never shows off your mistakes.
 5. **Explains algorithms step by step** in a short numbered "How it works", and lists the videos and articles you used under "Further explanation" with their real titles.
 6. **Adds a revision block** to every note: key takeaways and self-check questions with hidden answers.
 7. **Draws a diagram only when it earns its place** (an order, a structure, states, a comparison), in a friendly hand-drawn style.

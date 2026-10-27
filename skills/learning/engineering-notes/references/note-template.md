@@ -40,9 +40,7 @@ A small, correct example that you have actually run, with its real output, then 
 
 ## Common mistakes
 
-- Mistakes the learner made or is likely to make, and why they are wrong.
-
-> **Correction:** In my notebook I wrote "…". That is not quite right: …
+- General pitfalls and why they are wrong ("a common mistake is…"). Never phrase them as the learner's own errors; their notebook mistakes are fixed silently in the text above.
 
 ## Practice
 

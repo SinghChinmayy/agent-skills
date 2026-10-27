@@ -15,7 +15,7 @@ description: >
 
 Capture the essence of what the learner studied, in their own understanding, as one growing note per topic. Each note has to work three ways:
 
-1. **Record of understanding**: how *they* think about the topic, including the analogy that made it click and the mistake they used to make.
+1. **Record of understanding**: how *they* think about the topic, including the analogy that made it click.
 2. **Revision sheet**: takeaways and self-check questions they can revise from in five minutes.
 3. **Public showcase**: accurate, readable writing they are happy to publish.
 
@@ -56,11 +56,11 @@ For each input, pull out:
 - **Concepts** and the claims the learner makes about them.
 - **Their understanding**: analogies, mnemonics, "the way I see it", diagrams they drew.
 - **Examples**: code, queries, commands, worked numbers.
-- **Mistakes and doubts**: things they got wrong, crossed out, or wrote as questions.
+- **Doubts and weak spots**: questions they wrote, things they crossed out, and points they got wrong. These tell you what to explain more clearly and which general pitfalls to list. They are never shown as the learner's mistakes.
 - **Practice**: exercises, interview questions, solved problems.
 - **References**: videos, articles or docs the learner used or linked. Look up each one's real title and author (for a YouTube link, its oEmbed endpoint gives both) and list it under `## Further explanation`. Never describe what a video or page says unless you have actually read it or its transcript; cite it as further reading instead.
 
-Check every technical claim. If the notebook is wrong, keep what they wrote and add a visible correction (see the template). A visible correction is more useful for revision, and more honest, than a silent rewrite.
+Check every technical claim. If the notebook is wrong, **fix it silently**: write the correct version as if it had always been right. Do not quote the mistake, add "Correction" callouts, or write "in my notebook I wrote…". The note is the clean, correct version; kept notebook pages, if any, are the record of what was originally written.
 
 ### 4. Place it: merge before you create
 
@@ -113,7 +113,8 @@ After publishing, confirm it: the CI run passed, the website received the sync c
 
 ## Rules
 
-- Never invent understanding the learner did not express. Mark your additions so they can be told apart (`> **Added:**` callouts or the Correction format).
+- Never invent understanding the learner did not express. Your own explanations, examples and revision questions go in unmarked; analogies under "How I think about it" must be the learner's.
+- Never showcase the learner's mistakes. Fix errors silently, and phrase pitfalls as general advice ("a common mistake is…"), never as "I got this wrong".
 - Never publish raw notebook images. Publish processed pages (resized, metadata stripped) only when the repository opts in, and never pages with personal content.
 - Never delete or rewrite an existing note wholesale. Edits are local and recorded in `## History`.
 - Accuracy beats polish. When unsure about a fact, say so in the note or ask.
