@@ -32,6 +32,7 @@ No Node? Copy a skill's `SKILL.md` into `~/.claude/skills/<name>/` for Claude Co
 | [modular-development](skills/engineering/modular-development/) | Locks the agent to the files you declare, with a review gate you control before anything is merged. | "modular dev", "/modular" |
 | [grill-me](skills/planning/grill-me/) | A one-question-at-a-time interview about your plan, with a recommended answer for every question. | "grill me" |
 | [db-planning](skills/planning/db-planning/) | Interview, then versioned DBML and markdown database plans under `planning/db/`. | "plan db", "design database" |
+| [engineering-notes](skills/learning/engineering-notes/) | Turns notebook photos and Markdown into continuous, topic-wise notes with revision questions and diagrams only when they help, ready to publish. | "process my notes" |
 | [caveman](skills/productivity/caveman/) | Terse replies that keep every technical detail and cut output tokens by about 75%. | "caveman mode", "be brief" |
 | [og-generator](skills/frontend/og-generator/) | Generates Open Graph images with headless Chrome from two HTML templates. Written for one of my sites, so expect to adapt it. | "generate OG images" |
 
@@ -46,6 +47,7 @@ No Node? Copy a skill's `SKILL.md` into `~/.claude/skills/<name>/` for Claude Co
 skills/
   engineering/   tdd-red-green-refactor, modular-development
   planning/      grill-me, db-planning
+  learning/      engineering-notes
   productivity/  caveman
   frontend/      og-generator
 install.sh       legacy: appends every SKILL.md to ~/.claude/CLAUDE.md

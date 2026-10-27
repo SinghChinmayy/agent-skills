@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-label="Workflow: notebook pages and Markdown notes go into the inbox; the agent transcribes them, merges them into one note per topic with a revision block and an optional diagram, commits; on push, CI validates, syncs to the website repo, builds, and publishes the Notes section.">
+  <defs>
+    <filter id="w" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="61"/>
+      <feDisplacementMap in="SourceGraphic" scale="2.2"/>
+    </filter>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2b2b2b"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#e5484d"/></marker>
+    <symbol id="bot" viewBox="0 0 80 110">
+      <path d="M40 5 V16" class="s"/><circle cx="40" cy="5" r="4" style="fill:#e5484d" class="s"/>
+      <rect x="10" y="16" width="60" height="40" rx="11" style="fill:#dde3ea" class="s"/>
+      <circle cx="28" cy="34" r="5" style="fill:#2b2b2b"/><circle cx="52" cy="34" r="5" style="fill:#2b2b2b"/>
+      <path d="M31 45 Q40 52 49 45" class="s"/>
+      <rect x="18" y="60" width="44" height="34" rx="8" style="fill:#c9d3df" class="s"/>
+      <circle cx="40" cy="77" r="5" style="fill:#30a46c" class="s"/>
+      <path d="M18 68 L6 82 M62 68 L74 82 M30 94 L30 106 M50 94 L50 106" class="s"/>
+    </symbol>
+    <style>
+      text{font-family:'Comic Neue','Chalkboard SE','Comic Sans MS','Marker Felt',cursive;fill:#2b2b2b}
+      .mono{font-family:'SF Mono',Menlo,Consolas,monospace}
+      .s{stroke:#2b2b2b;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect width="800" height="380" rx="18" fill="#fffdf7"/>
+  <g filter="url(#w)">
+    <path d="M34 58 L144 52 L150 182 L40 188 Z" style="fill:#fff" class="s"/>
+    <path d="M52 82 q20 -6 40 0 t40 0 M52 102 q16 -5 32 0 t36 0 M52 122 q22 -6 44 0 t30 0 M52 142 q14 -5 28 0" class="s" style="stroke:#276ef1" stroke-width="1.8"/>
+    <path d="M110 150 l14 14 M124 150 l-14 14" class="s" style="stroke:#e5484d" stroke-width="1.8"/>
+    <rect x="36" y="228" width="112" height="46" rx="10" style="fill:#ffffff;stroke:#2b2b2b" class="s"/>
+    <rect x="186" y="112" width="120" height="70" rx="10" style="fill:#fff1c7;stroke:#c99a1e" class="s"/>
+    <path d="M152 120 L182 136" class="s" marker-end="url(#a)"/>
+    <path d="M152 250 L182 168" class="s" marker-end="url(#a)"/>
+    <rect x="336" y="40" width="214" height="228" rx="10" style="fill:#eef1f5;stroke:#8a94a3" class="s"/>
+    <path d="M310 147 L332 147" class="s" marker-end="url(#a)"/>
+    <rect x="580" y="40" width="196" height="80" rx="10" style="fill:#d3f3e1;stroke:#30a46c" class="s"/>
+    <rect x="580" y="140" width="196" height="52" rx="10" style="fill:#dbe7ff;stroke:#276ef1" class="s"/>
+    <path d="M554 90 L576 80" class="s" marker-end="url(#a)"/>
+    <path d="M554 160 L576 166" class="s" marker-end="url(#a)"/>
+    <rect x="186" y="300" width="230" height="56" rx="10" style="fill:#ebe3fd;stroke:#7c5cd6" class="s"/>
+    <rect x="470" y="300" width="306" height="56" rx="10" style="fill:#d3f3e1;stroke:#30a46c" class="s"/>
+    <path d="M678 196 L678 282 L300 282 L300 296" class="s" stroke-dasharray="7 6" marker-end="url(#a)"/>
+    <path d="M420 328 L466 328" class="s" marker-end="url(#a)"/>
+  </g>
+  <text x="92" y="208" font-size="13" text-anchor="middle" style="fill:#2b2b2b">notebook pages</text>
+  <text x="92.0" y="246.8" font-size="14" text-anchor="middle" font-weight="700">notes.md</text>
+  <text x="92.0" y="265.0" font-size="12" text-anchor="middle" style="fill:#5b6573">+ photos, PDFs</text>
+  <text x="246.0" y="142.5" font-size="15" text-anchor="middle" font-weight="700">inbox/</text>
+  <text x="246.0" y="162.0" font-size="13" text-anchor="middle" style="fill:#5b6573">not committed</text>
+  <text x="443.0" y="159.2" font-size="15" text-anchor="middle"></text>
+  <text x="443" y="66" font-size="15" text-anchor="middle" font-weight="700" style="fill:#2b2b2b">agent + skill</text>
+  <text x="352" y="96" font-size="13" text-anchor="start" style="fill:#2b2b2b">1 transcribe, ask about [?]</text>
+  <text x="352" y="124" font-size="13" text-anchor="start" style="fill:#2b2b2b">2 extract your understanding</text>
+  <text x="352" y="152" font-size="13" text-anchor="start" style="fill:#2b2b2b">3 merge into the topic note</text>
+  <text x="352" y="180" font-size="13" text-anchor="start" style="fill:#2b2b2b">4 takeaways + check-yourself</text>
+  <text x="352" y="208" font-size="13" text-anchor="start" style="fill:#2b2b2b">5 diagram, only if it helps</text>
+  <text x="352" y="236" font-size="13" text-anchor="start" style="fill:#2b2b2b">6 validate, log, commit</text>
+  <use href="#bot" x="514" y="8" width="34" height="47"/>
+  <text x="678.0" y="75.8" font-size="14" text-anchor="middle" font-weight="700">notes/sql/having.md</text>
+  <text x="678.0" y="94.0" font-size="12" text-anchor="middle" style="fill:#5b6573">one growing note per topic</text>
+  <text x="678.0" y="170.9" font-size="14" text-anchor="middle">practice/sql/001-….md</text>
+  <text x="301.0" y="323.8" font-size="14" text-anchor="middle" font-weight="700">git push (on your word)</text>
+  <text x="301.0" y="342.0" font-size="12" text-anchor="middle" style="fill:#5b6573">CI: validate, sync, build</text>
+  <text x="623.0" y="323.8" font-size="14" text-anchor="middle" font-weight="700">chinmaysingh.me/notes</text>
+  <text x="623.0" y="342.0" font-size="12" text-anchor="middle" style="fill:#5b6573">revise anywhere, show what you learned</text>
+</svg>
