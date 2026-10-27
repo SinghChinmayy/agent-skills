@@ -2,6 +2,8 @@
 
 Copy this into `notes/<subject>/<topic>.md`. All front-matter fields are required except `aliases`.
 
+Front matter is YAML: quote any value that contains `: ` (for example `summary: "Find candidates who have every skill: Python and SQL."`), or it will be misread and break the website build. `scripts/check_notes.py` catches this.
+
 ```markdown
 ---
 title: Filtering grouped results with HAVING
