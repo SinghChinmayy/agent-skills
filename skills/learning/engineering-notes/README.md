@@ -16,7 +16,7 @@ You study the way you already do: a paper notebook, a quick Markdown file. Drop 
 6. **Draws a diagram only when it earns its place** (an order, a structure, states, a comparison), in a friendly hand-drawn style.
 7. **Validates, logs and commits.** It never pushes on its own, because pushing publishes.
 
-Raw inputs are never committed, so your notebook stays private. Only the distilled notes are published.
+Raw inputs are never committed. If you want your handwritten pages kept with the note, opt in from your notes repository's `AGENTS.md`: the agent resizes each page, strips its metadata (phone photos can carry GPS coordinates), and links the pages from the note.
 
 ## When to use it
 
@@ -30,6 +30,7 @@ Say "process my notes", "process the inbox", "digest my notes", "add this to my 
 | Note and practice templates | [`references/note-template.md`](references/note-template.md) |
 | When to draw, and how | [`references/diagram-style.md`](references/diagram-style.md) |
 | Diagram helper (boxes, arrows, a robot) | [`scripts/sketch.py`](scripts/sketch.py) |
+| Strip EXIF/GPS from kept notebook photos | [`scripts/strip_metadata.py`](scripts/strip_metadata.py) |
 
 The skill expects a notes repository with `inbox/`, `notes/`, `practice/`, `log.md` and a `scripts/check_notes.py` validator. [SinghChinmayy/Engineering-Notes](https://github.com/SinghChinmayy/Engineering-Notes) is a working example, including the GitHub Action that publishes notes to a website.
 
@@ -72,5 +73,6 @@ engineering-notes/
 ├── assets/engineering-notes-flow.svg
 ├── references/note-template.md
 ├── references/diagram-style.md
-└── scripts/sketch.py
+├── scripts/sketch.py
+└── scripts/strip_metadata.py
 ```

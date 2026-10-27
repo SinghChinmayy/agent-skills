@@ -43,6 +43,16 @@ A small, correct, runnable example, then what each important part does.
 
 - [001 · Data Science Skills](../../practice/sql/001-data-science-skills.md)
 
+## My notebook pages            (only if the repository keeps them)
+
+<details>
+<summary>Show the notebook pages</summary>
+
+![Notebook page 1: what it covers.](./sources/<topic>-page-1.jpg)
+*Page 1: one-line caption.*
+
+</details>
+
 ## Revision
 
 ### Key takeaways

@@ -29,6 +29,7 @@ The notes repository's `AGENTS.md` may override these paths. Read it first.
 inbox/                  drop zone, not committed except inbox/README.md
 notes/<subject>/<topic>.md
 notes/<subject>/assets/<topic>-<name>.svg
+notes/<subject>/sources/<topic>-page-N.jpg   optional: kept notebook pages (see step 7)
 practice/<subject>/NNN-<slug>.md    solved exercises and interview problems
 log.md                  what was processed and where it went
 scripts/check_notes.py  front-matter validator (run before committing)
@@ -85,10 +86,15 @@ Add a diagram when the idea is about **order** (a pipeline, a request path, quer
 
 ### 7. Validate, log, tidy
 
-1. Run `python3 scripts/check_notes.py`. Fix every error.
-2. Append to `log.md`: date, each input file, and the notes and practice files it changed.
-3. Move processed inputs to `inbox/processed/<YYYY-MM-DD>/` (git-ignored), and keep them until the user has reviewed the result.
-4. Update the subject index in the repository `README.md` if a note or practice file was added.
+1. **Keep the notebook pages, if the repository opts in.** Only when the notes repository's `AGENTS.md` says to keep notebook pages:
+   1. Resize each photo to about 1500×2000 and compress it (`sips -Z 2000 -s formatOptions 72 in.jpg --out out.jpg` on macOS, or `magick in.jpg -resize 2000x2000 -quality 72 out.jpg`).
+   2. Strip its metadata with `scripts/strip_metadata.py`. Phone photos can carry GPS coordinates and device details, and the pages are published.
+   3. Save the result as `notes/<subject>/sources/<topic>-page-N.jpg`, and link the pages from the note under `## My notebook pages` in a `<details>` block, one image per page with a one-line caption.
+   4. Never keep a page that shows personal content. Ask the user instead.
+2. Run `python3 scripts/check_notes.py`. Fix every error.
+3. Append to `log.md`: date, each input file, and the notes and practice files it changed.
+4. Move processed inputs to `inbox/processed/<YYYY-MM-DD>/` (git-ignored), and keep them until the user has reviewed the result.
+5. Update the subject index in the repository `README.md` if a note or practice file was added.
 
 ### 8. Commit; publish only on the user's word
 
@@ -97,7 +103,7 @@ Commit with `notes(<subject>): <what was learned>`, one commit per processed bat
 ## Rules
 
 - Never invent understanding the learner did not express. Mark your additions so they can be told apart (`> **Added:**` callouts or the Correction format).
-- Never publish raw notebook images or personal content.
+- Never publish raw notebook images. Publish processed pages (resized, metadata stripped) only when the repository opts in, and never pages with personal content.
 - Never delete or rewrite an existing note wholesale. Edits are local and recorded in `## History`.
 - Accuracy beats polish. When unsure about a fact, say so in the note or ask.
 - One topic per file, one file per topic.
